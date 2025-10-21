@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat - Swapify</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-gradient-to-r from-teal-500 to-blue-600 rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-lg">S</span>
+                    </div>
+                    <span class="text-xl font-bold text-gray-800">Swapify</span>
+                </a>
+                <div class="flex items-center space-x-4">
+                    <a href="/" class="text-gray-600 hover:text-teal-600 transition-colors duration-200">Home</a>
+                    <a href="/create-post" class="text-gray-600 hover:text-teal-600 transition-colors duration-200">Create Post</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="flex h-[600px]">
+                    <!-- Chat List Sidebar -->
+                    <div class="w-1/3 border-r border-gray-200">
+                        <div class="p-4 border-b border-gray-200">
+                            <h2 class="text-lg font-semibold text-gray-800">Messages</h2>
+                        </div>
+                        
+                        <div class="overflow-y-auto">
+                            <!-- Chat Item 1 -->
+                            <div class="p-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50 bg-teal-50 border-teal-200">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h3 class="font-medium text-gray-800 truncate">Raj Patel</h3>
+                                        <p class="text-sm text-gray-600 truncate">Need help with React.js project</p>
+                                        <p class="text-xs text-gray-500 truncate">I can help you with React state management...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chat Item 2 -->
+                            <div class="p-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h3 class="font-medium text-gray-800 truncate">Priya Sharma</h3>
+                                        <p class="text-sm text-gray-600 truncate">Logo Design Needed</p>
+                                        <p class="text-xs text-gray-500 truncate">I'm interested in your logo design project...</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Chat Item 3 -->
+                            <div class="p-4 border-b border-gray-100 cursor-pointer hover:bg-gray-50">
+                                <div class="flex items-center space-x-3">
+                                    <div class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center">
+                                        <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="flex-1 min-w-0">
+                                        <h3 class="font-medium text-gray-800 truncate">Mike Chen</h3>
+                                        <p class="text-sm text-gray-600 truncate">Mathematics tutor needed</p>
+                                        <p class="text-xs text-gray-500 truncate">I can help you with calculus...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Messages Area -->
+                    <div class="flex-1 flex flex-col">
+                        <!-- Chat Header -->
+                        <div class="p-4 border-b border-gray-200">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-teal-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-5 h-5 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="font-medium text-gray-800">Raj Patel</h3>
+                                    <p class="text-sm text-gray-600">Need help with React.js project</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Messages -->
+                        <div class="flex-1 overflow-y-auto p-4 space-y-4">
+                            <!-- Message from Raj -->
+                            <div class="flex justify-start">
+                                <div class="max-w-xs lg:max-w-md px-4 py-2 rounded-lg bg-gray-200 text-gray-800">
+                                    <p class="text-sm">Hi Alice! I saw your post about needing help with React.js. I can definitely help you with state management and API integration.</p>
+                                    <p class="text-xs mt-1 text-gray-500">10:30 AM</p>
+                                </div>
+                            </div>
+
+                            <!-- Message from Alice -->
+                            <div class="flex justify-end">
+                                <div class="max-w-xs lg:max-w-md px-4 py-2 rounded-lg bg-teal-600 text-white">
+                                    <p class="text-sm">That's great! I'm working on an e-commerce website. What's your experience with Redux and API calls?</p>
+                                    <p class="text-xs mt-1 text-teal-100">10:32 AM</p>
+                                </div>
+                            </div>
+
+                            <!-- Message from Raj -->
+                            <div class="flex justify-start">
+                                <div class="max-w-xs lg:max-w-md px-4 py-2 rounded-lg bg-gray-200 text-gray-800">
+                                    <p class="text-sm">I have 3+ years experience with Redux and have built several APIs using Node.js and Express. I can show you best practices for state management and error handling.</p>
+                                    <p class="text-xs mt-1 text-gray-500">10:35 AM</p>
+                                </div>
+                            </div>
+
+                            <!-- Message from Alice -->
+                            <div class="flex justify-end">
+                                <div class="max-w-xs lg:max-w-md px-4 py-2 rounded-lg bg-teal-600 text-white">
+                                    <p class="text-sm">Perfect! In return, I can teach you advanced Photoshop techniques. Are you interested in photo manipulation and digital art?</p>
+                                    <p class="text-xs mt-1 text-teal-100">10:37 AM</p>
+                                </div>
+                            </div>
+
+                            <!-- Message from Raj -->
+                            <div class="flex justify-start">
+                                <div class="max-w-xs lg:max-w-md px-4 py-2 rounded-lg bg-gray-200 text-gray-800">
+                                    <p class="text-sm">Yes! I've been wanting to learn Photoshop for a while. This sounds like a perfect skill exchange. When would you like to start?</p>
+                                    <p class="text-xs mt-1 text-gray-500">10:40 AM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Message Input -->
+                        <div class="p-4 border-t border-gray-200">
+                            <form class="flex space-x-4">
+                                <input
+                                    type="text"
+                                    placeholder="Type your message..."
+                                    class="flex-1 px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-transparent transition-all duration-200"
+                                />
+                                <button
+                                    type="submit"
+                                    class="bg-teal-600 hover:bg-teal-700 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-200 flex items-center space-x-2"
+                                >
+                                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                                    </svg>
+                                    <span>Send</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // Simple chat functionality
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const input = this.querySelector('input');
+            const message = input.value.trim();
+            
+            if (message) {
+                // Add message to chat
+                const messagesContainer = document.querySelector('.space-y-4');
+                const messageDiv = document.createElement('div');
+                messageDiv.className = 'flex justify-end';
+                messageDiv.innerHTML = `
+                    <div class="max-w-xs lg:max-w-md px-4 py-2 rounded-lg bg-teal-600 text-white">
+                        <p class="text-sm">${message}</p>
+                        <p class="text-xs mt-1 text-teal-100">${new Date().toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'})}</p>
+                    </div>
+                `;
+                messagesContainer.appendChild(messageDiv);
+                
+                // Clear input
+                input.value = '';
+                
+                // Scroll to bottom
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+        });
+    </script>
+</body>
+</html>
