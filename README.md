@@ -1,149 +1,76 @@
-Swapify - Skill & Service Exchange Platform
-A modern Flask web application that connects people in local communities to exchange skills and services. Users can post services they offer (like tutoring, cooking, gardening) and requests for help they need, creating a barter and cash-based exchange platform.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Flask](https://img.shields.io/badge/Flask-Web%20Framework-black)
+![MySQL](https://img.shields.io/badge/MySQL-Database-orange)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple)
 
-🌟 Features
-User Authentication: Secure login and registration system
-Service Posting: Users can post services they offer with details
-Request Posting: Users can post requests for help they need
-Modern UI: Sleek, responsive design with glassmorphism effects
-Local Community: Location-based service and request matching
-Payment Modes: Support for both cash and barter exchanges
-Profile Management: Users can update their profile information
-🛠 Tech Stack
-Backend: Python Flask
-Database: MySQL
-Frontend: HTML5, CSS3, JavaScript
-Styling: Bootstrap 5 + Custom CSS
-Icons: Font Awesome
-Security: Werkzeug password hashing
-📋 Prerequisites
-Before running the application, make sure you have:
+# Swapify – Skill & Service Exchange Platform
 
-Python 3.7 or higher
-MySQL Server
-pip (Python package installer)
-🚀 Installation & Setup
-1. Clone or Download the Project
-# If using git
-git clone <repository-url>
-cd swapify
+A modern Flask-based web application that connects people in local communities to exchange skills and services. Users can post services they offer (like tutoring, cooking, gardening) and requests for help they need, creating a barter and cash-based exchange platform.
 
-# Or simply download and extract the project files
-2. Install Python Dependencies
-pip install -r requirements.txt
-3. Setup MySQL Database
-Start your MySQL server
-Create a new database:
-CREATE DATABASE swapify_db;
-Import the database schema:
-mysql -u root -p swapify_db < database.sql
-Or manually run the SQL commands from database.sql
+## 🌟 Features
 
-4. Configure Database Connection
-Edit app.py and update the database configuration:
+- 🔐 User Authentication System
+- 🛠 Service Posting
+- 📢 Request Posting
+- 🎨 Modern Responsive UI
+- 📍 Location-Based Matching
+- 💰 Cash & Barter Exchange Support
+- 👤 Profile Management
+- 🔒 Secure Password Hashing
 
-DB_CONFIG = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': 'your_mysql_password',  # Update this
-    'database': 'swapify_db'
-}
-5. Run the Application
-python app.py
-The application will be available at http://localhost:5000
+---
 
-📁 Project Structure
+## 🛠 Tech Stack
+
+| Technology | Usage |
+|---|---|
+| Python | Backend Logic |
+| Flask | Web Framework |
+| MySQL | Database |
+| HTML5 | Frontend Structure |
+| CSS3 | Styling |
+| JavaScript | Client-side Functionality |
+| Bootstrap 5 | Responsive Design |
+| Font Awesome | Icons |
+
+---
+
+## 🎨 UI Design Features
+
+- Glassmorphism Effects
+- Gradient Backgrounds
+- Smooth Animations
+- Responsive Layout
+- Card-Based Design
+- Modern Teal Color Theme
+
+---
+
+## 📁 Project Structure
+
+```bash
 swapify/
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-├── database.sql          # Database schema and sample data
-├── README.md             # This file
-├── templates/            # HTML templates
-│   ├── index.html        # Login/Register page
-│   ├── dashboard.html    # Main dashboard
-│   ├── add_service.html  # Add service form
-│   ├── add_request.html  # Add request form
-│   └── profile.html      # User profile page
-└── static/               # Static assets
+│
+├── app.py
+├── requirements.txt
+├── database.sql
+├── README.md
+│
+├── templates/
+│   ├── index.html
+│   ├── dashboard.html
+│   ├── add_service.html
+│   ├── add_request.html
+│   └── profile.html
+│
+└── static/
     ├── css/
-    │   └── style.css     # Custom styles
+    │   └── style.css
     └── js/
-        └── script.js     # JavaScript functions
-🎨 Design Features
-Glassmorphism: Modern glass-like effects with backdrop blur
-Gradient Backgrounds: Beautiful teal and blue gradients
-Responsive Design: Works perfectly on desktop and mobile
-Smooth Animations: Hover effects and transitions
-Card-based Layout: Clean, organized content presentation
-Color Scheme: Teal primary color with soft grays and whites
-👥 Sample Users
-The application comes with sample data including:
-
-Test Users:
-
-john@example.com (password: password123)
-jane@example.com (password: password123)
-mike@example.com (password: password123)
-sarah@example.com (password: password123)
-Sample Services:
-
-Math Tutoring
-Cooking Classes
-Garden Design
-Photography
-Web Development
-Yoga Instruction
-Sample Requests:
-
-Calculus Help
-Cooking Lessons
-Garden Maintenance
-Event Photography
-Website Development
-Yoga Classes
-🔧 Customization
-Adding New Features
-New Routes: Add routes in app.py
-New Templates: Create HTML files in templates/
-Database Changes: Modify database.sql and update app.py
-Styling: Update static/css/style.css
-Database Schema
-The application uses three main tables:
-
-users: User account information
-services: Services offered by users
-requests: Help requests from users
-🚀 Deployment
-Local Development
-python app.py
-Production Deployment
-Set up a production MySQL server
-Configure environment variables for database credentials
-Use a WSGI server like Gunicorn:
-pip install gunicorn
-gunicorn -w 4 -b 0.0.0.0:8000 app:app
-🐛 Troubleshooting
-Common Issues
-Database Connection Error
-
-Check MySQL server is running
-Verify database credentials in app.py
-Ensure database exists
-Module Not Found Error
-
-Run pip install -r requirements.txt
-Check Python version compatibility
-Port Already in Use
+        └── script.js
 
 Change port in app.py: app.run(port=5001)
 Or kill the process using port 5000
+
 📝 License
 This project is created for educational purposes. Feel free to use and modify as needed.
-
-🤝 Contributing
-This is a student project, but suggestions and improvements are welcome!
-
-📞 Support
-For questions or issues, please check the troubleshooting section or create an issue in the project repository.
-
-Happy Swapping! 🎉
